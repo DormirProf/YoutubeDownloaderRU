@@ -138,7 +138,7 @@
                         <TextBlock
                             VerticalAlignment="Center"
                             DockPanel.Dock="Left"
-                            Text="Параллельный предел"
+                            Text="Количество параллельных загрузок"
                             TextAlignment="Right" />
                         <StackPanel
                             VerticalAlignment="Center"
