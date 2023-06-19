@@ -10,7 +10,7 @@
 
 ## Скачать
 
-- 🟢 **[Stable release](https://github.com/DormirProf/YoutubeDownloader/releases/tag/latest)**
+- 🟢 **[Stable release](https://github.com/DormirProf/YoutubeDownloaderRU/releases/tag/latest)**
 
 ## Отличия от основного репозитория
 - **Работает в России**
