@@ -30,6 +30,9 @@
     <Reference Include="YoutubeExplode">
       <HintPath>..\YoutubeExplode.dll</HintPath>
     </Reference>
+    <Reference Include="YoutubeExplode.Converter">
+      <HintPath>..\YoutubeExplode.Converter.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
   <!-- This downloads FFmpeg and copies it to output directory-->
