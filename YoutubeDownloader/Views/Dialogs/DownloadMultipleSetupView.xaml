@@ -157,7 +157,7 @@
                 DockPanel.Dock="Right"
                 IsEnabled="{Binding SelectedContainer.IsAudioOnly, Converter={x:Static converters:InverseBoolConverter.Instance}}"
                 Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" Text="Video quality:" />
+                <TextBlock VerticalAlignment="Center" Text="Качество видео:" />
                 <ComboBox
                     Width="150"
                     Margin="8,0,0,0"
@@ -187,7 +187,7 @@
                 Style="{DynamicResource MaterialDesignOutlinedButton}">
                 <Button.Content>
                     <TextBlock>
-                        <Run Text="DOWNLOAD" />
+                        <Run Text="СКАЧАТЬ" />
                         <Run Text="(" /><Run Text="{Binding SelectedVideos.Count, FallbackValue=0, Mode=OneWay}" /><Run Text=")" />
                     </TextBlock>
                 </Button.Content>
@@ -197,7 +197,7 @@
             <Button
                 Margin="8,0,0,0"
                 Command="{s:Action Close}"
-                Content="CANCEL"
+                Content="ОТМЕНА"
                 IsCancel="True"
                 Style="{DynamicResource MaterialDesignOutlinedButton}" />
         </StackPanel>

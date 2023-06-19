@@ -50,7 +50,7 @@
                         Grid.Column="1"
                         Margin="0,6,6,8"
                         VerticalAlignment="Bottom"
-                        materialDesign:HintAssist.Hint="URL or search query"
+                        materialDesign:HintAssist.Hint="URL-адрес или поисковый запрос"
                         materialDesign:TextFieldAssist.DecorationVisibility="Hidden"
                         AcceptsReturn="True"
                         BorderThickness="0"
@@ -123,15 +123,15 @@
                     FontWeight="Light"
                     TextAlignment="Center"
                     TextWrapping="Wrap">
-                    <Run Text="Copy-paste a" />
+                    <Run Text="Скопируйте и вставьте" />
                     <Run FontWeight="SemiBold" Text="URL" />
-                    <Run Text="or enter a" />
-                    <Run FontWeight="SemiBold" Text="search query" />
-                    <Run Text="to start downloading" />
+                    <Run Text="или" />
+                    <Run FontWeight="SemiBold" Text="поисковой запрос" />
+                    <Run Text="чтобы начать загрузку" />
                     <LineBreak />
-                    <Run Text="Press" />
+                    <Run Text="Нажмите" />
                     <Run FontWeight="SemiBold" Text="Shift+Enter" />
-                    <Run Text="to add multiple items" />
+                    <Run Text="чтобы добавить несколько элементов" />
                 </TextBlock>
             </StackPanel>
 
@@ -146,12 +146,12 @@
                 Visibility="{Binding IsDownloadsAvailable, Converter={x:Static converters:BoolToVisibilityConverter.VisibleOrHidden}}">
                 <DataGrid.ContextMenu>
                     <ContextMenu>
-                        <MenuItem Command="{s:Action RemoveSuccessfulDownloads}" Header="Remove successful downloads" />
-                        <MenuItem Command="{s:Action RemoveInactiveDownloads}" Header="Remove inactive downloads" />
+                        <MenuItem Command="{s:Action RemoveSuccessfulDownloads}" Header="Удалить успешные загрузки" />
+                        <MenuItem Command="{s:Action RemoveInactiveDownloads}" Header="Удалить неактивные загрузки" />
                         <Separator />
-                        <MenuItem Command="{s:Action RestartFailedDownloads}" Header="Restart failed downloads" />
+                        <MenuItem Command="{s:Action RestartFailedDownloads}" Header="Перезапустить неудачные загрузки" />
                         <Separator />
-                        <MenuItem Command="{s:Action CancelAllDownloads}" Header="Cancel all downloads" />
+                        <MenuItem Command="{s:Action CancelAllDownloads}" Header="Отмените все загрузки" />
                     </ContextMenu>
                 </DataGrid.ContextMenu>
                 <DataGrid.RowStyle>
@@ -188,7 +188,7 @@
                     <!--  File name  -->
                     <DataGridTemplateColumn
                         Width="*"
-                        Header="File"
+                        Header="Файл"
                         SortMemberPath="FileName">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate DataType="{x:Type components:DownloadViewModel}">
@@ -206,7 +206,7 @@
                     <!--  Status  -->
                     <DataGridTemplateColumn
                         MinWidth="100"
-                        Header="Status"
+                        Header="Статус"
                         SortMemberPath="ProgressOperation.Progress">
                         <DataGridTemplateColumn.CellTemplate>
                             <DataTemplate DataType="{x:Type components:DownloadViewModel}">

@@ -86,7 +86,7 @@
 
             <!--  Download option  -->
             <StackPanel Grid.Column="0" Orientation="Horizontal">
-                <TextBlock VerticalAlignment="Center" Text="Format:" />
+                <TextBlock VerticalAlignment="Center" Text="Формат:" />
                 <ComboBox
                     Width="150"
                     Margin="8,0,0,0"
@@ -130,7 +130,7 @@
                 <!--  Download  -->
                 <Button
                     Command="{s:Action Confirm}"
-                    Content="DOWNLOAD"
+                    Content="СКАЧАТЬ"
                     IsDefault="True"
                     Style="{DynamicResource MaterialDesignOutlinedButton}" />
 
@@ -138,7 +138,7 @@
                 <Button
                     Margin="8,0,0,0"
                     Command="{s:Action Close}"
-                    Content="CANCEL"
+                    Content="ОТМЕНА"
                     IsCancel="True"
                     Style="{DynamicResource MaterialDesignOutlinedButton}" />
             </StackPanel>

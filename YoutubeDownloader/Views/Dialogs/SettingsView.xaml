@@ -22,7 +22,7 @@
             Margin="16,16,16,8"
             FontSize="19"
             FontWeight="Light"
-            Text="Settings" />
+            Text="Настройки" Cursor="" />
 
         <Border
             Grid.Row="1"
@@ -35,34 +35,24 @@
                     <DockPanel Background="Transparent" LastChildFill="False">
                         <DockPanel.ToolTip>
                             <TextBlock>
-                                <Run Text="Perform automatic updates on every launch" />
+                                <Run Text="Выполняйте автоматические обновления при каждом запуске" />
                                 <LineBreak />
                                 <Run FontWeight="SemiBold" Text="Warning:" />
-                                <Run Text="it's recommended to leave this option enabled to ensure that the app is compatible with the latest version of YouTube" />
+                                <Run Text="рекомендуется оставить эту опцию включенной, чтобы убедиться, что приложение совместимо с последней версией YouTube" />
                             </TextBlock>
                         </DockPanel.ToolTip>
-                        <TextBlock
-                            Margin="16,8"
-                            VerticalAlignment="Center"
-                            DockPanel.Dock="Left"
-                            Text="Auto-update" />
-                        <ToggleButton
-                            Margin="16,8"
-                            VerticalAlignment="Center"
-                            DockPanel.Dock="Right"
-                            IsChecked="{Binding IsAutoUpdateEnabled}" />
                     </DockPanel>
 
                     <!--  Dark mode  -->
                     <DockPanel
                         Background="Transparent"
                         LastChildFill="False"
-                        ToolTip="Use darker colors in the UI">
+                        ToolTip="Используйте более темные цвета в пользовательском интерфейсе">
                         <TextBlock
                             Margin="16,8"
                             VerticalAlignment="Center"
                             DockPanel.Dock="Left"
-                            Text="Dark mode" />
+                            Text="Темная тема" />
                         <ToggleButton
                             x:Name="DarkModeToggleButton"
                             Margin="16,8"
@@ -77,11 +67,11 @@
                     <DockPanel
                         Background="Transparent"
                         LastChildFill="False"
-                        ToolTip="Inject media tags into downloaded files">
+                        ToolTip="Вставлять медиа-теги в загруженные файлы">
                         <TextBlock
                             Margin="16,8"
                             DockPanel.Dock="Left"
-                            Text="Inject media tags" />
+                            Text="Вставить медиа-теги" />
                         <ToggleButton
                             Margin="16,8"
                             DockPanel.Dock="Right"
@@ -92,11 +82,11 @@
                     <DockPanel
                         Background="Transparent"
                         LastChildFill="False"
-                        ToolTip="When selecting multiple videos to download, skip those that already have matching files in the target directory">
+                        ToolTip="При выборе нескольких видеороликов для загрузки пропустите те, у которых уже есть соответствующие файлы в целевом каталоге">
                         <TextBlock
                             Margin="16,8"
                             DockPanel.Dock="Left"
-                            Text="Skip existing files" />
+                            Text="Пропускать существующие файлы" />
                         <ToggleButton
                             Margin="16,8"
                             DockPanel.Dock="Right"
@@ -110,28 +100,28 @@
                         LastChildFill="False">
                         <DockPanel.ToolTip>
                             <TextBlock>
-                                <Run Text="Template used for generating file names for downloaded videos" />
+                                <Run Text="Шаблон, используемый для генерации имен файлов для загруженных видео" />
                                 <LineBreak />
                                 <LineBreak />
-                                <Run Text="Available tokens:" />
+                                <Run Text="Доступные токены:" />
                                 <LineBreak />
                                 <Run FontWeight="SemiBold" Text="$num" />
-                                <Run Text="— video's position in the list (if applicable)" />
+                                <Run Text="— позиция видео в списке (если применимо)" />
                                 <LineBreak />
                                 <Run FontWeight="SemiBold" Text="$id" />
-                                <Run Text="— video ID" />
+                                <Run Text="— ID видео" />
                                 <LineBreak />
                                 <Run FontWeight="SemiBold" Text="$title" />
-                                <Run Text="— video title" />
+                                <Run Text="— название видео" />
                                 <LineBreak />
                                 <Run FontWeight="SemiBold" Text="$author" />
-                                <Run Text="— video author" />
+                                <Run Text="— автор видео" />
                             </TextBlock>
                         </DockPanel.ToolTip>
                         <TextBlock
                             VerticalAlignment="Center"
                             DockPanel.Dock="Left"
-                            Text="File name template" />
+                            Text="Шаблон имени файла" />
                         <TextBox
                             Width="150"
                             VerticalAlignment="Center"
@@ -144,11 +134,11 @@
                         Margin="16,8"
                         Background="Transparent"
                         LastChildFill="False"
-                        ToolTip="How many downloads can be active at the same time">
+                        ToolTip="Сколько загрузок может быть активно одновременно">
                         <TextBlock
                             VerticalAlignment="Center"
                             DockPanel.Dock="Left"
-                            Text="Parallel limit"
+                            Text="Параллельный предел"
                             TextAlignment="Right" />
                         <StackPanel
                             VerticalAlignment="Center"
@@ -178,7 +168,7 @@
             Margin="16"
             HorizontalAlignment="Stretch"
             Command="{s:Action Close}"
-            Content="SAVE"
+            Content="СОХРАНИТЬ"
             IsCancel="True"
             IsDefault="True"
             Style="{DynamicResource MaterialDesignOutlinedButton}" />
